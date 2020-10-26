@@ -61,11 +61,10 @@ var Mobile = /** @class */ (function () {
         this.price = nuevoprecio;
     };
     Mobile.prototype.imprimirprivadas = function () {
-        console.log("Las características del modelo " + this.getName() + " son: \n :" + this.toStringNuevo());
+        console.log("Las características del modelo " + this.getName() + " son: \n " + this.toStringNuevo());
     };
     Mobile.prototype.toStringNuevo = function () {
-        //   return ` nombre comercial - ${this.name} \n model - ${this.model} \n marca - ${this.trademark} \n Tamaño SD - ${this.sdSize} \n Color - ${this.color} \n Es 5G - ${this.is5G} \n Numero de camaras - ${this.cameraNumber} \n Precio - ${this.price}\n\n`;
-        return ("\t nombre comercial - " + this.name);
+        return "\t nombre comercial - " + this.name + " \n \t model - " + this.model + " \n \t marca - " + this.trademark + " \n \t Tama\u00F1o SD - " + this.sdSize + " \n \t Color - " + this.color + " \n \t Es 5G - " + this.is5G + " \n \t Numero de camaras - " + this.cameraNumber + " \n \t Precio - " + this.price + "\n\n";
     };
     return Mobile;
 }());

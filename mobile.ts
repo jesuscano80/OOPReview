@@ -80,7 +80,7 @@ class Mobile{
         this.price=nuevoprecio;
     }
     imprimirprivadas():void{
-        console.log("Las características del modelo " + this.getName() +  " son: \n :"  + this.toStringNuevo() );
+        console.log("Las características del modelo " + this.getName() +  " son: \n "  + this.toStringNuevo() );
     }
 
     toStringNuevo():string{
