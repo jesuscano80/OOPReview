@@ -12,8 +12,60 @@ var Mobile = /** @class */ (function () {
         this.cameraNumber = cameraNumber;
         this.price = price;
     }
+    Mobile.prototype.getName = function () {
+        return this.name;
+    };
+    Mobile.prototype.getModel = function () {
+        return this.model;
+    };
+    Mobile.prototype.getTradeMark = function () {
+        return this.trademark;
+    };
+    Mobile.prototype.getSdSize = function () {
+        return this.sdSize;
+    };
+    Mobile.prototype.getColor = function () {
+        return this.color;
+    };
+    Mobile.prototype.getIs5g = function () {
+        return this.is5G;
+    };
+    Mobile.prototype.getCameranumber = function () {
+        return this.cameraNumber;
+    };
+    Mobile.prototype.getPrice = function () {
+        return this.price;
+    };
+    Mobile.prototype.setName = function (nuevonombre) {
+        this.name = nuevonombre;
+    };
+    Mobile.prototype.setModel = function (nuevomodel) {
+        this.model = nuevomodel;
+    };
+    Mobile.prototype.setTradeMark = function (nuevamarca) {
+        this.trademark = nuevamarca;
+    };
+    Mobile.prototype.setSDsize = function (nuevosdsize) {
+        this.sdSize = nuevosdsize;
+    };
+    Mobile.prototype.setColor = function (nuevocolor) {
+        this.color = nuevocolor;
+    };
+    Mobile.prototype.setIs5g = function (cambio5g) {
+        this.is5G = cambio5g;
+    };
+    Mobile.prototype.setCameraNumber = function (nuevascamaras) {
+        this.cameraNumber = nuevascamaras;
+    };
+    Mobile.prototype.setPrecio = function (nuevoprecio) {
+        this.price = nuevoprecio;
+    };
+    Mobile.prototype.imprimirprivadas = function () {
+        console.log("Las características del modelo " + this.getName() + " son: \n :" + this.toStringNuevo());
+    };
     Mobile.prototype.toStringNuevo = function () {
-        console.log("nombre comercial - " + this.name + " \n model - " + this.model + " \n marca - " + this.trademark + " \n Tama\u00F1o SD - " + this.sdSize + " \n Color - " + this.color + " \n Es 5G - " + this.is5G + " \n Numero de camaras - " + this.cameraNumber + " \n Precio - " + this.price + "\n\n");
+        //   return ` nombre comercial - ${this.name} \n model - ${this.model} \n marca - ${this.trademark} \n Tamaño SD - ${this.sdSize} \n Color - ${this.color} \n Es 5G - ${this.is5G} \n Numero de camaras - ${this.cameraNumber} \n Precio - ${this.price}\n\n`;
+        return ("\t nombre comercial - " + this.name);
     };
     return Mobile;
 }());
