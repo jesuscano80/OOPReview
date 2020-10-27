@@ -79,8 +79,8 @@ class Mobile{
     setPrecio(nuevoprecio:number){
         this.price=nuevoprecio;
     }
-    imprimirprivadas():void{
-        console.log("Las características del modelo " + this.getName() +  " son: \n "  + this.toStringNuevo() );
+    imprimirprivadas():string{
+        return ("Las características del modelo " + this.getName() +  " son: \n "  + this.toStringNuevo() );
     }
 
     toStringNuevo():string{

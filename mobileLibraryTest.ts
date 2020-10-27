@@ -13,7 +13,7 @@ var mylibreria = new MobileLibrary (arraymoviles,"Madrid","libreria1");
 
 // console.log(mylibreria.totalPriceCalculation());
 
-arraymoviles.forEach(function(elem){elem.imprimirprivadas()});
+// arraymoviles.forEach(function(elem){elem.imprimirprivadas()});
 
 
 

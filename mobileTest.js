@@ -11,4 +11,4 @@ var galaxy10 = new mobile_1.Mobile("Galaxy10", "Galaxy 10", "Samsung", 32, "negr
 // nokia3210.toStringNuevo();
 nokia3210.setIs5g(true);
 nokia3210.setCameraNumber(4);
-nokia3210.imprimirprivadas();
+console.log(nokia3210.imprimirprivadas());

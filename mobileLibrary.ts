@@ -24,6 +24,9 @@ class MobileLibrary{
     getMobiles():Mobile[]{
         return this.mobiles;
     }
+    getTotalprice():number{
+        return this.totalprice;
+    }
 
     setName(nuevonombre:string){
         this.name=nuevonombre;
@@ -43,9 +46,15 @@ class MobileLibrary{
         }
         return resultado
     }
-    
+    todoslosmodelos(){
+            var texto="";
+            for (let i=0;i<this.mobiles.length;i++){
+            texto+= this.mobiles[i].imprimirprivadas()+ "\n";
+            }
+        return texto; 
+    }   
     public printLibrary(){
-        console.log("Estos son todos los moviles\n" + this.mobiles.forEach(function(elem){elem.imprimirprivadas()}) + "Precio total : " + this.totalprice);
+        console.log("Estos son todos los moviles\n" + this.todoslosmodelos() + "Precio total : " + this.getTotalprice());
     }
   
 }

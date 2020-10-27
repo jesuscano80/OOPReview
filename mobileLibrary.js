@@ -18,6 +18,9 @@ var MobileLibrary = /** @class */ (function () {
     MobileLibrary.prototype.getMobiles = function () {
         return this.mobiles;
     };
+    MobileLibrary.prototype.getTotalprice = function () {
+        return this.totalprice;
+    };
     MobileLibrary.prototype.setName = function (nuevonombre) {
         this.name = nuevonombre;
     };
@@ -34,8 +37,15 @@ var MobileLibrary = /** @class */ (function () {
         }
         return resultado;
     };
+    MobileLibrary.prototype.todoslosmodelos = function () {
+        var texto = "";
+        for (var i = 0; i < this.mobiles.length; i++) {
+            texto += this.mobiles[i].imprimirprivadas() + "\n";
+        }
+        return texto;
+    };
     MobileLibrary.prototype.printLibrary = function () {
-        console.log("Estos son todos los moviles\n" + this.mobiles.forEach(function (elem) { elem.imprimirprivadas(); }) + "Precio total : " + this.totalprice);
+        console.log("Estos son todos los moviles\n" + this.todoslosmodelos() + "Precio total : " + this.getTotalprice());
     };
     return MobileLibrary;
 }());
