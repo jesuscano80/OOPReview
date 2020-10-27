@@ -1,5 +1,5 @@
 import {Mobile} from "./mobile";
-console.log("hola");
+
 class MobileLibrary{
     private name:string;
     private location:string;
@@ -68,7 +68,5 @@ let mylibrary22= new MobileLibrary ([movil1,movil2,movil3,movil4,movil5],"Barcel
 
 mylibrary22.printLibrary();
 
-console.log("pruebas con branch")
 
-console.log("otra cosa");
 export{MobileLibrary};
