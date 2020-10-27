@@ -1,5 +1,5 @@
 import {Mobile} from "./mobile";
-
+console.log("hola");
 class MobileLibrary{
     private name:string;
     private location:string;
@@ -70,4 +70,5 @@ mylibrary22.printLibrary();
 
 console.log("pruebas con branch")
 
+console.log("otra cosa");
 export{MobileLibrary};
