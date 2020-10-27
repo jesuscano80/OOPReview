@@ -11,8 +11,9 @@ var arraymoviles=[movil1,movil2,movil3,movil4,movil5];
 
 var mylibreria = new MobileLibrary (arraymoviles,"Madrid","libreria1");
 
-console.log(mylibreria.totalPriceCalculation());
+// console.log(mylibreria.totalPriceCalculation());
 
+arraymoviles.forEach(function(elem){elem.imprimirprivadas()});
 
 
 
