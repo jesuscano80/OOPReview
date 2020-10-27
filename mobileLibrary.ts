@@ -67,5 +67,5 @@ var movil5 = new Mobile ("mi10","Mi10","Xiaomi",256,"blanco",true,5,800);
 let mylibrary22= new MobileLibrary ([movil1,movil2,movil3,movil4,movil5],"Barcelona","superalmacen");
 
 mylibrary22.printLibrary();
-
+console.log("otra cosa");
 export{MobileLibrary};
